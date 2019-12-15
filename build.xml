@@ -1,0 +1,47 @@
+<project>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+	<javac srcdir="src" destdir="build/classes">
+		<classpath>
+			<pathelement path="lib/jbl.jar"/>
+			<pathelement path="lib/bristlecone.jar"/>
+                        <pathelement path="lib/commons-logging-1.1.1.jar"/>
+                        <pathelement path="lib/commons-logging.jar"/>
+                        <pathelement path="lib/dom4j-1.6.1.jar"/>
+                        <pathelement path="lib/ifxjdbc.jar"/>
+                        <pathelement path="lib/iijdbc.jar"/>
+                        <pathelement path="lib/jackpine1_0.jar"/>
+                        <pathelement path="lib/jcommon-1.0.15.jar"/>
+                        <pathelement path="lib/jfreechart-1.0.12.jar"/>
+                        <pathelement path="lib/jgroups-all.jar"/>
+                        <pathelement path="lib/jline-0.9.94.jar"/>
+                        <pathelement path="lib/junit.jar"/>
+                        <pathelement path="lib/log4j.jar"/>
+                        <pathelement path="lib/mysql-connector-java-5.0.8-bin.jar"/>
+                        <pathelement path="lib/postgresql-8.0.309.jdbc3.jar"/>
+                        <pathelement path="lib/spatial.jar"/>
+                        <pathelement path="lib/tungsten-commons.jar"/>
+                        <pathelement path="lib/tungsten-fsm-0.5.jar"/>
+		</classpath>
+	</javac>
+    </target>
+
+    <target name="jar">
+        <mkdir dir="lib"/>
+	<jar destfile="lib/jackpine_custom.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="edu.toronto.cs.jackpine.benchmark.JackpineBenchmarkLauncher.java"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="lib/jackpine_custom.jar" fork="true"/>
+    </target>
+
+</project>
