@@ -13,7 +13,6 @@ To Do:
 ```
 - Remove or update queries for data that are not available publicly.
 - Add more data support.
-- Add random query generator.
 ```
 
 This version is derived from paper
