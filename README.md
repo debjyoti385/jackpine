@@ -15,7 +15,26 @@ To Do:
 - Add more data support.
 ```
 
-This version is derived from paper
+This version is used in the paper, if you are using it please cite the following papers.
+```
+@article{DBLP:journals/corr/abs-2105-12287,
+  author    = {Debjyoti Paul and
+               Jie Cao and
+               Feifei Li and
+               Vivek Srikumar},
+  title     = {Database Workload Characterization with Query Plan Encoders},
+  journal   = {CoRR},
+  volume    = {abs/2105.12287},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2105.12287},
+  archivePrefix = {arXiv},
+  eprint    = {2105.12287},
+  timestamp = {Tue, 01 Jun 2021 18:07:59 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2105-12287.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
+
 ```
 @inproceedings{ray2011jackpine,
   title={Jackpine: A benchmark to evaluate spatial database performance},
