@@ -15,23 +15,24 @@ To Do:
 - Add more data support.
 ```
 
-This version is used in the paper, if you are using it please cite the following papers.
+If you are using this benchmark, please cite the following papers.
+
 ```
-@article{DBLP:journals/corr/abs-2105-12287,
-  author    = {Debjyoti Paul and
-               Jie Cao and
-               Feifei Li and
-               Vivek Srikumar},
-  title     = {Database Workload Characterization with Query Plan Encoders},
-  journal   = {CoRR},
-  volume    = {abs/2105.12287},
-  year      = {2021},
-  url       = {https://arxiv.org/abs/2105.12287},
-  archivePrefix = {arXiv},
-  eprint    = {2105.12287},
-  timestamp = {Tue, 01 Jun 2021 18:07:59 +0200},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2105-12287.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+@article{10.14778/3503585.3503600,
+author = {Paul, Debjyoti and Cao, Jie and Li, Feifei and Srikumar, Vivek},
+title = {Database Workload Characterization with Query Plan Encoders},
+year = {2021},
+issue_date = {December 2021},
+publisher = {VLDB Endowment},
+volume = {15},
+number = {4},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3503585.3503600},
+doi = {10.14778/3503585.3503600},
+journal = {Proc. VLDB Endow.},
+month = {dec},
+pages = {923–935},
+numpages = {13}
 }
 ```
 
